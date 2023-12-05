@@ -1,0 +1,41 @@
+{
+  "title": "Communauté",
+  "filterRole": {
+    "all": "Tous les rôles"
+  },
+  "card": {
+    "joinedAt": "Date d'adhésion"
+  },
+  "pannel": {
+    "title": "Filtres",
+    "fieldsearch": {
+      "title": "Le nom contient",
+      "lastname": {
+        "placeholder": "Nom de famille..."
+      },
+      "firstname": {
+        "placeholder": "Prénom..."
+      }
+    },
+    "datepicker": {
+      "title": "Embauché entre"
+    }
+  },
+  "dateFormats": {
+    "long": "YYYY-MM-DD HH:mm:ss",
+    "short": "DD-MM-YYYY",
+    "shortVariant": "DD/MM/YYYY"
+  },
+  "filterLocation": {
+    "all": "Toutes les localisations"
+  },
+  "filterAgencies": {
+    "all": "Toutes les agences"
+  },
+  "filterPosition": {
+    "all": "Toutes les positions"
+  },
+  "button": {
+    "morefilter": "Plus de filtres"
+  }
+}

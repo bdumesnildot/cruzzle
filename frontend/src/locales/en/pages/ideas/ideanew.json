@@ -1,0 +1,95 @@
+{
+  "title": "Create idea",
+  "description": "Create idea, add files and pictures",
+  "header": {
+    "title": "Header",
+    "fileserror": "The file <strong>{{ fileName }}</strong> exceeds the maximum allowed size of {{ maxSize }}!"
+  },
+  "textfield": {
+    "title": {
+      "label": "Title",
+      "placeholder": "Title of idea"
+    },
+    "context": {
+      "label": "Context",
+      "placeholder": "Leave a few words..."
+    },
+    "categories": {
+      "label": "Categories",
+      "placeholder": "Select category or categories"
+    }
+  },
+  "tabs": {
+    "goal": {
+      "info": "Info",
+      "label": "Goal",
+      "content1": "Clearly define the main objective you want to achieve with your idea. This will help you stay focused and guide your actions throughout the process.",
+      "content2": "Think about the specific goal you want to accomplish with your idea. A well-defined goal will allow you to measure your progress and stay focused on the expected outcomes."
+    },
+    "profits": {
+      "info": "Info",
+      "label": "Profits",
+      "content1": "Identify the advantages and benefits that your idea can bring. This will help you understand the positive impact it could have and effectively communicate its benefits to others.",
+      "content2": "Consider the concrete benefits that your idea can offer. By highlighting these advantages, you can convince others of its importance and value."
+    },
+    "risks": {
+      "info": "Info",
+      "label": "Risks",
+      "content1": "Identify potential risks associated with your idea. By recognizing these risks early on, you will be better prepared to anticipate and mitigate them, minimizing potential obstacles.",
+      "content2": "Examine the potential risks that could jeopardize the success of your idea. By identifying them and developing mitigation strategies, you will increase your chances of success."
+    },
+    "textfield": {
+      "placeholder": "Leave a few words"
+    }
+  },
+  "upload": {
+    "title": "Upload files",
+    "or": "OR",
+    "drag": "Drag and drop files here",
+    "supportedfiles": "Supported files",
+    "maxand": "max and",
+    "filesmax": "files max",
+    "numberfiles_zero": "Number of files : <strong>{{nbAttachements}}</strong>",
+    "numberfiles_one": "Number of files : <strong>{{nbAttachements}}</strong>",
+    "numberfiles_other": "Number of files : <strong>{{nbAttachements}}</strong>"
+  },
+  "cloud": {
+    "title": "Cloud share",
+    "textfield": {
+      "label": "Cloud"
+    }
+  },
+  "team": {
+    "title": "Team",
+    "label": "Collaborators",
+    "placeholder": "Gather your team"
+  },
+  "formatbytes": {
+    "bytes": "Bytes",
+    "kb": "KB",
+    "mb": "MB",
+    "gb": "GB",
+    "tb": "TB",
+    "pb": "PB",
+    "eb": "EB",
+    "zb": "ZB",
+    "yb": "YB"
+  },
+  "alert": {
+    "success": {
+      "message": "Idea updated successfully.",
+      "title": "Idea updated"
+    },
+    "error": {
+      "message": "Failed to create idea. Please try again.",
+      "title": "Error",
+      "fileexceed": "The file <strong>{file.name}</strong> exceeds the maximum allowed size of {formatBytes(maxSizeInKB * 1024)}!",
+      "fileexist": "The file <strong>{{ fileName }}</strong> already exists!",
+      "maxfiles": "The following file(s) exceed(s) the maximum allowed count of <strong>{{maxFiles}}</strong>!"
+    }
+  },
+  "dialog": {
+    "title": "Confirm idea creation",
+    "content": "Are you sure you want to save this idea? If you delete the files, you won't be able to retrieve them again!"
+  }
+}

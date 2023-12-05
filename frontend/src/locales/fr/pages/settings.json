@@ -1,0 +1,51 @@
+{
+  "title": "Paramètres",
+  "part": {
+    "language": {
+      "title": "Langue",
+      "buttonselect": "Sélectionner la langue"
+    },
+    "password": {
+      "title": "Mot de passe",
+      "info": {
+        "title": "Info",
+        "content": "Vous pouvez <strong>changer votre mot de passe</strong> ici. Mais vous devez vous identifier à nouveau avant de continuer."
+      },
+      "textfield": {
+        "mail": {
+          "label": "E-mail",
+          "placeholder": "Saisissez votre nom d'utilisateur"
+        },
+        "password": {
+          "label": "Mot de passe",
+          "placeholder": "Veuillez entrer votre mot de passe",
+          "helperText": "Saisie incorrecte."
+        }
+      }
+    }
+  },
+  "dialogPassword": {
+    "alert": {
+      "success": {
+        "title": "Mot de passe mis à jour !",
+        "message": "Le mot de passe a été mis à jour avec succès"
+      },
+      "error": {
+        "title": "Erreur",
+        "message": "Le mot de passe n'a pas été mis à jour"
+      }
+    },
+    "title": "Changer le mot de passe",
+    "content": "Pour changer votre mot de passe, veuillez saisir votre nouveau mot de passe et le confirmer ci-dessous.",
+    "textfield": {
+      "password": {
+        "label": "Mot de passe",
+        "placeholder": "Entrez votre mot de passe"
+      },
+      "passwordConfirm": {
+        "label": "Confirmez le mot de passe",
+        "placeholder": "Confirmez votre mot de passe"
+      }
+    }
+  }
+}

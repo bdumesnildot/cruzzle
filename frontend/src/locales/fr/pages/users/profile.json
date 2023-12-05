@@ -1,0 +1,136 @@
+{
+  "dateFormats": {
+    "long": "YYYY-MM-DD HH:mm:ss",
+    "short": "MM-DD-YYYY",
+    "shortVariant": "DD/MM/YYYY"
+  },
+  "hourFormats": {
+    "standard": "HH:mm"
+  },
+  "edit": {
+    "title": "Mettre à jour vos informations générales",
+    "picture": {
+      "alert": {
+        "avatar": "Votre avatar a été mis à jour",
+        "banner": "Votre bannière a été mise à jour",
+        "error": "Une erreur s'est produite"
+      }
+    },
+    "section": {
+      "information": {
+        "title": "Informations",
+        "contactadmin": "Contactez-nous si vous avez commis une erreur dans les champs gris.",
+        "textfield": {
+          "firstname": {
+            "label": "Prénom"
+          },
+          "lastname": {
+            "label": "Nom de famille"
+          },
+          "email": {
+            "label": "E-mail"
+          },
+          "phone": {
+            "label": "Téléphone",
+            "placeholder": "Entrez votre numéro de téléphone",
+            "switch": "Afficher le numéro de téléphone"
+          },
+          "birthday": {
+            "title": "Anniversaire",
+            "label": "Date",
+            "switch": "Afficher la date de naissance"
+          }
+        }
+      },
+      "general": {
+        "title": "Général",
+        "description": "Laissez quelques mots à propos de vous pour vos collègues. C'est toujours agréable de mieux connaître la personne.",
+        "textfield": {
+          "biography": {
+            "label": "À propos de moi",
+            "placeholder": "Laissez quelques mots..."
+          },
+          "city": {
+            "label": "Ville"
+          },
+          "country": {
+            "label": "Pays"
+          },
+          "link": {
+            "label": "Lien",
+            "placeholder": "Lien à partager avec les collaborateurs"
+          }
+        }
+      }
+    }
+  },
+  "tabs": {
+    "title": {
+      "ariaLabel": "Onglet profil",
+      "general": "Général",
+      "activity": "Activité",
+      "contributions": "Contributions",
+      "puzzles": "Puzzles"
+    },
+    "general": {
+      "aboutme": "À propos de moi",
+      "biography": "Pas de biographie",
+      "overview": "Aperçu",
+      "puzzles": "Puzzles résolues",
+      "ideas": "Total d'idées",
+      "participations": "Participations",
+      "title": "Titre",
+      "agency": "Agence",
+      "mail": "E-mail",
+      "birthday": "Anniversaire",
+      "phone": "Téléphone",
+      "joinedCompagny": "Date d'adhésion à l'entreprise"
+    },
+    "activity": {
+      "activityCard": {
+        "liked": " a aimé 👍 dans ",
+        "comment": " a ajouté un commentaire à ",
+        "idea": " une idée.",
+        "today": "Aujourd'hui",
+        "yesterday": "Hier",
+        "logo": "Logo activité"
+      }
+    },
+    "puzzles": {
+      "puzzlesLikes": {
+        "title": "Puzzle \"Likes\"",
+        "description": "(Augmentez le nombre de likes pour révéler le puzzle.)"
+      },
+      "puzzlesComments": {
+        "title": "Puzzle \"Commentaires\"",
+        "description": "(Augmentez le nombre de commentaires pour révéler le puzzle.)"
+      },
+      "puzzlesIdeas": {
+        "title": "Puzzle \"Idées\"",
+        "description": "(Pour débloquer le puzzle, augmentez le nombre d'idées.)"
+      },
+      "puzzlesFavorites": {
+        "title": "Puzzle \"Favoris\"",
+        "description": "(Pour dévoiler le puzzle, augmentez le nombre d'idées que vous avez mises en favori.)"
+      },
+      "puzzlesTeams": {
+        "title": "Puzzle \"Équipes\"",
+        "description": "(Pour dévoiler le puzzle, augmentez votre engagement en rejoignant plus d'équipes.)"
+      },
+      "puzzlesImages": {
+        "treasure": "Découverte de trésor",
+        "collection": "Collection",
+        "geoImg": "Géométrique"
+      }
+    },
+    "contributions": {
+      "created": "a créé l'idée <b>{{idea}}</b>.",
+      "added": "a été ajouté(e) à l'idée <b>{{idea}}</b>.",
+      "displayDate": {
+        "today": "Aujourd'hui",
+        "yesterday": "Hier"
+      },
+      "noActivities": "Aucune activité"
+    }
+  }
+}

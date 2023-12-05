@@ -1,0 +1,35 @@
+{
+  "sidebar": {
+    "home": "Home",
+    "ideas": "Ideas",
+    "favorites": "Favorites",
+    "community": "Community",
+    "admin": {
+      "pannel": "Panel admin",
+      "users": "Users",
+      "ideas": "Ideas",
+      "categories": "Categories"
+    },
+    "settings": "Settings"
+  },
+  "topbar": {
+    "accountsettings": {
+      "tooltip": {
+        "title": "Account settings"
+      },
+      "profil": "Profile",
+      "settings": "Settings",
+      "logout": "Logout"
+    },
+    "languages": {
+      "tooltip": {
+        "title": "Languages"
+      }
+    },
+    "notifications": {
+      "tooltip": {
+        "title": "Notifications"
+      }
+    }
+  }
+}

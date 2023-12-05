@@ -1,0 +1,53 @@
+{
+  "title": "Catégories",
+  "counter": "Total catégories",
+  "tableOfCategories": {
+    "columns": {
+      "title": "Libellé",
+      "use": {
+        "title": "Utilisation",
+        "render": "idées"
+      },
+      "color": "Couleur",
+      "preview": "Aperçu",
+      "actions": "Actions"
+    }
+  },
+  "alert": {
+    "success": {
+      "message": "Succès",
+      "delete": "Catégorie supprimée avec succès",
+      "updatecategory": "Catégorie mise à jour avec succès",
+      "createcategory": "Catégorie créée avec succès"
+    }
+  },
+  "tooltip": {
+    "edit": "Modifier l'idée",
+    "delete": "Supprimer l'idée"
+  },
+  "dialogUpdateCategory": {
+    "title": "Modifier la catégorie",
+    "content": "Vous êtes sur le point de modifier le libellé et la couleur de la catégorie sélectionnée. Veuillez remplir le formulaire ci-dessous.",
+    "textfield": {
+      "label": {
+        "label": "Libellé",
+        "placeholder": "Entrer un libellé",
+        "helpertext": "Veuillez entrer un mot de 2 à 25 lettres."
+      }
+    }
+  },
+  "dialogCreateCategory": {
+    "title": "Créer une nouvelle catégorie",
+    "content": "Vous êtes sur le point d'ajouter une nouvelle catégorie. Veuillez remplir le formulaire ci-dessous.",
+    "textfield": {
+      "label": {
+        "label": "Libellé",
+        "placeholder": "Entrer un libellé",
+        "helpertext": "Veuillez entrer un mot de 2 à 25 lettres."
+      }
+    }
+  },
+  "dialogConfirm": {
+    "title": "Supprimer la catégorie"
+  }
+}

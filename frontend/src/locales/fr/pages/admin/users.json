@@ -1,0 +1,144 @@
+{
+  "title": "Utilisateurs",
+  "countercard": "Total utilisateurs",
+  "dateFormats": {
+    "long": "YYYY-MM-DD HH:mm:ss",
+    "short": "DD-MM-YYYY"
+  },
+  "alert": {
+    "success": {
+      "update": "Utilisateur mis à jour avec succès",
+      "updateRole": "Rôle mis à jour avec succès"
+    },
+    "error": {
+      "update": "Impossible de mettre à jour l'utilisateur",
+      "updateRole": "Impossible de mettre à jour le rôle de l'utilisateur"
+    }
+  },
+  "tableOfUsers": {
+    "columns": {
+      "firstname": "Prénom",
+      "lastname": "Nom",
+      "mail": "Email",
+      "createdAt": "Créé le",
+      "joinedAt": "Rejoint le",
+      "agency": "Agence",
+      "position": "Poste",
+      "role": "Rôle",
+      "isActive": "Actif",
+      "actions": "Actions"
+    },
+    "tooltip": {
+      "active": {
+        "title": "Activer/Désactiver l'utilisateur",
+        "alert": "Statut actif de l'utilisateur mis à jour avec succès",
+        "error": "Impossible de changer l'état de l'utilisateur (Actif/Inactif)"
+      },
+      "visitprofil": "Visiter le profil de l'utilisateur",
+      "updateuser": "Modifier l'utilisateur",
+      "updatecredentials": "Modifier les informations de connexion"
+    },
+    "dialogUpdateUser": {
+      "title": "Modifier l'utilisateur",
+      "content": "Vous êtes sur le point de modifier les informations de {{firstname}} {{lastname}}. Veuillez remplir le formulaire ci-dessous.",
+      "textfield": {
+        "firstname": {
+          "label": "Prénom",
+          "placeholder": "Saisissez un prénom",
+          "helpertext": "Saisie incorrecte"
+        },
+        "lastname": {
+          "label": "Nom de famille",
+          "placeholder": "Saisissez un nom de famille",
+          "helpertext": "Saisie incorrecte"
+        },
+        "joinedAt": {
+          "label": "Date de rejoignement",
+          "helpertext": "obligatoire"
+        }
+      },
+      "select": {
+        "agency": {
+          "label": "Agence",
+          "helpertext": "obligatoire",
+          "placeholder": "Sélectionnez une agence"
+        },
+        "position": {
+          "label": "Poste",
+          "helpertext": "obligatoire",
+          "placeholder": "Sélectionnez un poste"
+        }
+      }
+    },
+    "dialogCreateUser": {
+      "title": "Créer un nouvel utilisateur",
+      "content": "Vous êtes sur le point d'ajouter un nouvel utilisateur. Veuillez remplir le formulaire ci-dessous.",
+      "textfield": {
+        "firstname": {
+          "label": "Prénom",
+          "placeholder": "Saisissez un prénom",
+          "helpertext": "Saisie incorrecte"
+        },
+        "lastname": {
+          "label": "Nom de famille",
+          "placeholder": "Saisissez un nom de famille",
+          "helpertext": "Saisie incorrecte"
+        },
+        "joinedAt": {
+          "label": "Date de rejoignement",
+          "helpertext": "obligatoire"
+        },
+        "email": {
+          "label": "Adresse e-mail",
+          "placeholder": "Saisissez une adresse e-mail"
+        },
+        "password": {
+          "label": "Mot de passe",
+          "placeholder": "Saisissez un mot de passe",
+          "helpertext": "Saisie incorrecte"
+        },
+        "passwordConfirm": {
+          "placeholder": "Confirmez le mot de passe",
+          "helpertext": "Les mots de passe saisis ne correspondent pas."
+        }
+      },
+      "alert": {
+        "success": {
+          "message": "Utilisateur créé avec succès"
+        },
+        "error": {
+          "message": "Adresse e-mail non disponible",
+          "user": "Impossible de mettre à jour l'utilisateur",
+          "update": "Erreur lors de la mise à jour de l'utilisateur"
+        }
+      }
+    },
+    "dialogResetPassword": {
+      "title": "Modifier les informations de connexion pour {{ firstname }} {{ lastname }}",
+      "content": "Cette action supprimera les informations de connexion actuelles de l'utilisateur et générera de nouvelles informations de connexion.",
+      "textfield": {
+        "email": {
+          "label": "Adresse e-mail",
+          "placeholder": "Veuillez saisir votre adresse e-mail"
+        },
+        "password": {
+          "label": "Mot de passe",
+          "placeholder": "Saisissez votre mot de passe",
+          "helpertext": "Saisie incorrecte"
+        },
+        "passwordConfirm": {
+          "placeholder": "Confirmez votre mot de passe",
+          "helpertext": "Les mots de passe saisis ne correspondent pas."
+        }
+      },
+      "alert": {
+        "success": {
+          "message": "Informations de connexion de l'utilisateur mises à jour avec succès"
+        },
+        "error": {
+          "message": "Adresse e-mail non disponible"
+        }
+      }
+    }
+  }
+}

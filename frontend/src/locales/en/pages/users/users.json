@@ -1,0 +1,41 @@
+{
+  "title": "Community",
+  "filterRole": {
+    "all": "All roles"
+  },
+  "card": {
+    "joinedAt": "Joined at"
+  },
+  "pannel": {
+    "title": "Filters",
+    "fieldsearch": {
+      "title": "Name contains",
+      "lastname": {
+        "placeholder": "Lastname..."
+      },
+      "firstname": {
+        "placeholder": "First name..."
+      }
+    },
+    "datepicker": {
+      "title": "Hired between"
+    }
+  },
+  "dateFormats": {
+    "long": "YYYY-MM-DD HH:mm:ss",
+    "short": "MM-DD-YYYY",
+    "shortVariant": "MM/DD/YYYY"
+  },
+  "filterLocation": {
+    "all": "All locations"
+  },
+  "filterAgencies": {
+    "all": "All agencies"
+  },
+  "filterPosition": {
+    "all": "All positions"
+  },
+  "button": {
+    "morefilter": "More filters"
+  }
+}

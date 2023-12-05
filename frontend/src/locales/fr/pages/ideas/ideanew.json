@@ -1,0 +1,95 @@
+{
+  "title": "Créer une idée",
+  "description": "Créer une idée, ajouter des fichiers et des images",
+  "header": {
+    "title": "En-tête",
+    "fileserror": "Le fichier <strong>{{ fileName }}</strong> dépasse la taille maximale autorisée de {{ maxSize }} !"
+  },
+  "textfield": {
+    "title": {
+      "label": "Titre",
+      "placeholder": "Titre de l'idée"
+    },
+    "context": {
+      "label": "Contexte",
+      "placeholder": "Laissez quelques mots..."
+    },
+    "categories": {
+      "label": "Catégories",
+      "placeholder": "Sélectionnez une ou plusieurs catégories"
+    }
+  },
+  "tabs": {
+    "goal": {
+      "info": "Info",
+      "label": "Objectif",
+      "content1": "Définissez clairement l'objectif principal que vous souhaitez atteindre avec votre idée. Cela vous aidera à rester concentré et à orienter vos actions tout au long du processus.",
+      "content2": "Réfléchissez à l'objectif spécifique que vous souhaitez réaliser avec votre idée. Un objectif bien défini vous permettra de mesurer vos progrès et de rester concentré sur les résultats attendus."
+    },
+    "profits": {
+      "info": "Info",
+      "label": "Avantages",
+      "content1": "Identifiez les avantages et les bénéfices que votre idée peut apporter. Cela vous aidera à comprendre l'impact positif qu'elle pourrait avoir et à communiquer efficacement ses avantages aux autres.",
+      "content2": "Considérez les avantages concrets que votre idée peut offrir. En mettant en avant ces avantages, vous pourrez convaincre les autres de son importance et de sa valeur."
+    },
+    "risks": {
+      "info": "Info",
+      "label": "Risques",
+      "content1": "Identifiez les risques potentiels liés à votre idée. En reconnaissant ces risques dès le début, vous serez mieux préparé pour les anticiper et les atténuer, minimisant ainsi les obstacles potentiels.",
+      "content2": "Examinez les risques potentiels qui pourraient compromettre le succès de votre idée. En les identifiant et en développant des stratégies d'atténuation, vous augmenterez vos chances de réussite."
+    },
+    "textfield": {
+      "placeholder": "Laissez quelques mots"
+    }
+  },
+  "upload": {
+    "title": "Télécharger des fichiers",
+    "or": "OU",
+    "drag": "Glisser-déposer ici",
+    "supportedfiles": "Formats de fichier",
+    "maxand": "max et",
+    "filesmax": "fichiers max",
+    "numberfiles_zero": "Nombre de fichier : <strong>{{nbAttachements}}</strong>",
+    "numberfiles_one": "Nombre de fichier : <strong>{{nbAttachements}}</strong>",
+    "numberfiles_other": "Nombre de fichiers : <strong>{{nbAttachements}}</strong>"
+  },
+  "cloud": {
+    "title": "Partage dans le cloud",
+    "textfield": {
+      "label": "Cloud"
+    }
+  },
+  "team": {
+    "title": "Équipe",
+    "label": "Collaborateurs",
+    "placeholder": "Réunissez votre équipe"
+  },
+  "formatbytes": {
+    "bytes": "Octets",
+    "kb": "Ko",
+    "mb": "Mo",
+    "gb": "Go",
+    "tb": "To",
+    "pb": "Po",
+    "eb": "Eo",
+    "zb": "Zo",
+    "yb": "Yo"
+  },
+  "alert": {
+    "success": {
+      "message": "Idée créée avec succès.",
+      "title": "Idée créée"
+    },
+    "error": {
+      "message": "Échec de la création de l'idée. Veuillez réessayer.",
+      "title": "Erreur",
+      "fileexceed": "Le fichier <strong>{{ fileName }}</strong> dépasse la taille maximale autorisée de {{ maxSize }} !",
+      "fileexist": "Le fichier <strong>{{ fileName }}</strong> existe déjà !",
+      "maxfiles": "Le(s) fichier(s) suivant(s) dépasse(nt) le nombre maximum autorisé de <strong>{{maxFiles}}</strong> !"
+    }
+  },
+  "dialog": {
+    "title": "Confirmer l'enregistrement de l'idée",
+    "content": "Êtes-vous sûr de vouloir enregistrer cette idée ? Si vous supprimez les fichiers, vous ne pourrez plus les récupérer !"
+  }
+}

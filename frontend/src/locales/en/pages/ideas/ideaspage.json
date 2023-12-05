@@ -1,0 +1,60 @@
+{
+  "title": "Ideas",
+  "tendences": "Trending ideas",
+  "dateFormats": {
+    "long": "YYYY-MM-DD HH:mm:ss",
+    "short": "MM/DD/YYYY"
+  },
+  "filterdate": {
+    "pastmonth": "Past month",
+    "pastweek": "Past week",
+    "today": "Today",
+    "custom": "Custom"
+  },
+  "morefilters": "More filters",
+  "filterauthor": {
+    "allauthors": "All authors",
+    "myagency": "My agency",
+    "me": "Me"
+  },
+  "filterbarCategory": {
+    "allcategories": "All categories"
+  },
+  "filterbarTrending": {
+    "recent": "Recent",
+    "viewed": "Viewed",
+    "commented": "Commented",
+    "liked": "Liked",
+    "values": {
+      "mostrecent": "Most recent",
+      "mostviewed": "Most viewed",
+      "mostcommented": "Most commented",
+      "mostliked": "Most liked"
+    }
+  },
+  "filterpannel": {
+    "title": "Filters",
+    "attachments": "Contains attachments",
+    "notcommentedyet": "Not commented yet",
+    "fieldtext": {
+      "textsearch": {
+        "title": "Title contains",
+        "placeholder": "Search by key words..."
+      },
+      "datepicker": {
+        "title": "Published beetween"
+      }
+    }
+  },
+  "ideacard": {
+    "date": "Date",
+    "status": {
+      "title": "Status",
+      "close": "Closed",
+      "inprogress": "In progress"
+    },
+    "replies": "replies",
+    "team": "Team",
+    "author": "Author"
+  }
+}

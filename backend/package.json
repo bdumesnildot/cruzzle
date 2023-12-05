@@ -1,0 +1,46 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --watch . --exec ts-node index.ts",
+    "migrate": "ts-node migrate.ts && prisma db pull --force && prisma generate",
+    "prisma-init": "prisma db pull && prisma generate",
+    "start": "node dist/index.js",
+    "lint": "echo '----- Checking Backend...' && npx prettier --debug-check . && eslint --ext .ts . && echo '----- Done!'",
+    "fix": "prettier --write . && eslint --fix --ext .ts ."
+  },
+  "dependencies": {
+    "@prisma/client": "^4.16.0",
+    "@types/multer": "^1.4.7",
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.8",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase": "^9.23.0",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/node": "^18.15.10",
+    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "@typescript-eslint/parser": "^5.59.9",
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "2.8.3",
+    "prisma": "^4.16.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3"
+  }
+}

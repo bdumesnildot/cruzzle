@@ -1,0 +1,136 @@
+{
+  "dateFormats": {
+    "long": "YYYY-MM-DD HH:mm:ss",
+    "short": "MM-DD-YYYY",
+    "shortVariant": "MM/DD/YYYY"
+  },
+  "hourFormats": {
+    "standard": "HH:mm"
+  },
+  "edit": {
+    "title": "Update your general information",
+    "picture": {
+      "alert": {
+        "avatar": "Your avatar has been updated",
+        "banner": "Your banner has been updated",
+        "error": "Something went wrong. Please try again."
+      }
+    },
+    "section": {
+      "information": {
+        "title": "Information",
+        "contactadmin": "Contact us if you made an error in the gray fields.",
+        "textfield": {
+          "firstname": {
+            "label": "First name"
+          },
+          "lastname": {
+            "label": "Last name"
+          },
+          "email": {
+            "label": "Mail"
+          },
+          "phone": {
+            "label": "Phone",
+            "placeholder": "Enter your phone number",
+            "switch": "Display phone number"
+          },
+          "birthday": {
+            "title": "Birthday",
+            "label": "Date",
+            "switch": "Display birthday"
+          }
+        }
+      },
+      "general": {
+        "title": "General",
+        "description": "Leave a few words for your colleagues, so they can get to know you a little.",
+        "textfield": {
+          "biography": {
+            "label": "About me",
+            "placeholder": "Leave a few words..."
+          },
+          "city": {
+            "label": "City"
+          },
+          "country": {
+            "label": "Country"
+          },
+          "link": {
+            "label": "Link",
+            "placeholder": "Link to share with collaborators"
+          }
+        }
+      }
+    }
+  },
+  "tabs": {
+    "title": {
+      "ariaLabel": "Tab profil",
+      "general": "General",
+      "activity": "Activity",
+      "contributions": "Contributions",
+      "puzzles": "Puzzles"
+    },
+    "general": {
+      "aboutme": "About me",
+      "biography": "No biography",
+      "overview": "Overview",
+      "puzzles": "Finished puzzles",
+      "ideas": "Total ideas",
+      "participations": "Participations",
+      "title": "Title",
+      "agency": "Agency",
+      "mail": "Mail",
+      "birthday": "Birthday",
+      "phone": "Phone",
+      "joinedCompagny": "Joined Company"
+    },
+    "activity": {
+      "activityCard": {
+        "liked": " liked 👍 in ",
+        "comment": " added comment to ",
+        "idea": " idea.",
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "logo": "Logo activity"
+      }
+    },
+    "puzzles": {
+      "puzzlesLikes": {
+        "title": "Puzzle \"Likes\"",
+        "description": "(Increase your number of likes to reveal the puzzle.)"
+      },
+      "puzzlesComments": {
+        "title": "Puzzle \"Comments\"",
+        "description": "(Increase your number of comments to reveal the puzzle.)"
+      },
+      "puzzlesIdeas": {
+        "title": "Puzzle \"Ideas\"",
+        "description": "(To unlock the puzzle, increase your number of ideas.)"
+      },
+      "puzzlesFavorites": {
+        "title": "Puzzle \"Favorites\"",
+        "description": "(To unveil the puzzle, increase the number of ideas you have favorited.)"
+      },
+      "puzzlesTeams": {
+        "title": "Puzzle \"Teams\"",
+        "description": "(To unveil the puzzle, enhance your engagement by joining more teams.)"
+      },
+      "puzzlesImages": {
+        "treasure": "Treasure discovering",
+        "collection": "Collection",
+        "geoImg": "Geometric"
+      }
+    },
+    "contributions": {
+      "created": "created the <b>{{idea}}</b> idea.",
+      "added": "was added to the <b>{{idea}}</b> idea.",
+      "displayDate": {
+        "today": "Today",
+        "yesterday": "Yesterday"
+      },
+      "noActivities": "No activities"
+    }
+  }
+}

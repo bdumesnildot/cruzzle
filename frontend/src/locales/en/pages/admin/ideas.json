@@ -1,0 +1,42 @@
+{
+  "title": "Ideas",
+  "counter": "Total ideas",
+  "dateFormats": {
+    "long": "YYYY-MM-DD HH:mm:ss",
+    "short": "MM-DD-YYYY"
+  },
+  "tableOfIdeas": {
+    "columns": {
+      "title": "Title",
+      "author": "Author",
+      "createdAt": "Created at",
+      "archivedAt": "Archived at",
+      "deletedAt": "Deleted at",
+      "files": "Files",
+      "views": "Views",
+      "likes": "Likes",
+      "favorites": "Favorites",
+      "actions": "Actions"
+    }
+  },
+  "alert": {
+    "success": {
+      "archive": "Idea archived successfully",
+      "delete": "Idea deleted successfully"
+    },
+    "error": {
+      "archive": "Cannot archive idea",
+      "delete": "Cannot delete idea"
+    }
+  },
+  "tooltip": {
+    "view": "Visit idea page",
+    "edit": "Edit idea",
+    "archive": "Archive idea",
+    "delete": "Delete idea"
+  },
+  "dialogConfirm": {
+    "title": "Archiving idea",
+    "content": "Please note that this action cannot be undone. Are you sure you want to proceed?"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Categories",
+  "counter": "Total categories",
+  "tableOfCategories": {
+    "columns": {
+      "title": "Label",
+      "use": {
+        "title": "Use",
+        "render": "ideas"
+      },
+      "color": "Color",
+      "preview": "Preview",
+      "actions": "Actions"
+    }
+  },
+  "alert": {
+    "success": {
+      "message": "Success",
+      "delete": "Category deleted successfully",
+      "updatecategory": "Category updated successfully",
+      "createcategory": "Category created successfully"
+    }
+  },
+  "tooltip": {
+    "edit": "Edit idea",
+    "delete": "Delete idea"
+  },
+  "dialogUpdateCategory": {
+    "title": "Edit category",
+    "content": "You are about to edit the label and color of the selected category. Please fill in the form below.",
+    "textfield": {
+      "label": {
+        "label": "Label",
+        "placeholder": "Enter a label",
+        "helpertext": "Please enter a word between 2 and 25 characters."
+      }
+    }
+  },
+  "dialogCreateCategory": {
+    "title": "Create new category",
+    "content": "You are about to add a new category. Please fill in the form below.",
+    "textfield": {
+      "label": {
+        "label": "Label",
+        "placeholder": "Enter a label",
+        "helpertext": "Please enter a word between 2 and 25 characters."
+      }
+    }
+  },
+  "dialogConfirm": {
+    "title": "Delete category"
+  }
+}

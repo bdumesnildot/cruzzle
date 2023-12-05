@@ -1,0 +1,14 @@
+{
+  "title": "Modifier l'idée",
+  "description": "Modifier l'idée, ajouter des fichiers et des images",
+  "alert": {
+    "success": {
+      "message": "Idée mise à jour avec succès.",
+      "title": "Idée mise à jour"
+    },
+    "error": {
+      "message": "Échec de la mise à jour de l'idée. Veuillez réessayer.",
+      "title": "Erreur"
+    }
+  }
+}

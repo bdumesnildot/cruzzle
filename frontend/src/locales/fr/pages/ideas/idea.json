@@ -1,0 +1,71 @@
+{
+  "alert": "Idée archivée !",
+  "dialogModify": {
+    "title": "Confirmer la modification",
+    "content": "Êtes-vous sûr de vouloir modifier cette idée ?"
+  },
+  "dialogArchive": {
+    "title": "Confirmer l'archive",
+    "content": "Êtes-vous sûr de vouloir archiver cette idée ? Cette action est <strong>irréversible</strong> et supprimera définitivement l'idée de la liste active. <br /> <br /> Veuillez noter que les idées archivées ne peuvent pas être restaurées."
+  },
+  "headerIdea": {
+    "published": "Publié le",
+    "dateFormats": {
+      "long": "DD MMM, YYYY"
+    },
+    "by": "Par",
+    "team": "Équipe",
+    "context": "Contexte"
+  },
+  "commentBox": {
+    "dateFormats": {
+      "long": "DD MMM, YYYY HH:mm"
+    }
+  },
+  "tabsIdea": {
+    "content": {
+      "general": "Général",
+      "files": "Fichiers",
+      "comments": "Commentaires"
+    },
+    "tabgeneral": {
+      "goal": "Objectif",
+      "profits": "Avantages",
+      "risks": "Risques",
+      "topcomments": "Top Commentaires"
+    },
+    "editComment": {
+      "alert": {
+        "error": "Le message ne peut pas être modifié",
+        "success": "Message modifié !"
+      },
+      "textfield": {
+        "placeholder": "Laissez quelques mots"
+      }
+    },
+    "createComment": {
+      "alert": {
+        "success": "Message créé !",
+        "error": "Le message ne peut pas être créé"
+      },
+      "textfield": {
+        "placeholder": "Laissez quelques mots"
+      }
+    },
+    "tabfiles": {
+      "nofiles": "Aucun fichier",
+      "type": "Type",
+      "file": "Fichier",
+      "size": "Taille",
+      "action": "Action"
+    },
+    "tabcomments": {
+      "title": "Commentaires",
+      "mostrecent": "Les plus récents",
+      "mostliked": "Les plus aimés",
+      "nocomments": "Aucun commentaire",
+      "seemore": "Voir plus",
+      "seeless": "Voir moins"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "dateFormats": {
+    "long": "D MMM, HH:mm",
+    "short": "DD/MM/YYYY"
+  },
+  "menuItem": "Aucune notification",
+  "tooltip": "Notifications",
+  "from": "de"
+}

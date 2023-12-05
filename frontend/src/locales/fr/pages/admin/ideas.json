@@ -1,0 +1,42 @@
+{
+  "title": "Idées",
+  "counter": "Total idées",
+  "dateFormats": {
+    "long": "YYYY-MM-DD HH:mm:ss",
+    "short": "DD-MM-YYYY"
+  },
+  "tableOfIdeas": {
+    "columns": {
+      "title": "Titre",
+      "author": "Auteur",
+      "createdAt": "Créé le",
+      "archivedAt": "Archivé le",
+      "deletedAt": "Supprimé le",
+      "files": "Fichiers",
+      "views": "Vues",
+      "likes": "J'aime",
+      "favorites": "Favoris",
+      "actions": "Actions"
+    }
+  },
+  "alert": {
+    "success": {
+      "archive": "Idée archivée avec succès",
+      "delete": "Idée supprimée avec succès"
+    },
+    "error": {
+      "archive": "Impossible d'archiver l'idée",
+      "delete": "Impossible de supprimer l'idée"
+    }
+  },
+  "tooltip": {
+    "view": "Visiter la page de l'idée",
+    "edit": "Modifier l'idée",
+    "archive": "Archiver l'idée",
+    "delete": "Supprimer l'idée"
+  },
+  "dialogConfirm": {
+    "title": "Archiver l'idée",
+    "content": "Veuillez noter que cette action est irréversible. Êtes-vous sûr de vouloir continuer ?"
+  }
+}

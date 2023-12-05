@@ -1,0 +1,41 @@
+{
+  "title": "Connexion",
+  "subtitle": "Veuillez entrer vos informations de connexion.",
+  "textfield": {
+    "mail": {
+      "label": "Adresse e-mail",
+      "helpertext": "Veuillez entrer une adresse e-mail valide."
+    },
+    "password": {
+      "label": "Mot de passe",
+      "helpertext": "Veuillez entrer un mot de passe valide."
+    }
+  },
+  "forgetpassword": {
+    "button": {
+      "forgetpassword": "Mot de passe oublié ?"
+    },
+    "dialog": {
+      "title": "Mot de passe oublié ?",
+      "content": "Entrez l'adresse e-mail associée à votre compte et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
+      "textfield": {
+        "password": {
+          "label": "Adresse e-mail",
+          "helpertext": "L'adresse e-mail est invalide."
+        }
+      }
+    },
+    "alert": {
+      "success": {
+        "email": "Veuillez vérifier votre boîte de réception e-mail pour réinitialiser votre mot de passe."
+      }
+    }
+  },
+  "alert": {
+    "error": {
+      "email": "Veuillez remplir tous les champs !",
+      "wrong": "Adresse e-mail ou mot de passe incorrect.",
+      "server": "Erreur interne du serveur. Veuillez réessayer plus tard."
+    }
+  }
+}

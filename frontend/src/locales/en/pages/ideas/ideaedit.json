@@ -1,0 +1,14 @@
+{
+  "title": "Modify idea",
+  "description": "Modify idea, add files and pictures",
+  "alert": {
+    "success": {
+      "message": "Idea updated successfully.",
+      "title": "Idea updated"
+    },
+    "error": {
+      "message": "Failed to update idea. Please try again.",
+      "title": "Error"
+    }
+  }
+}

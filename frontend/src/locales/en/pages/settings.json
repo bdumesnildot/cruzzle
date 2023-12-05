@@ -1,0 +1,51 @@
+{
+  "title": "Settings",
+  "part": {
+    "language": {
+      "title": "Language",
+      "buttonselect": "Select language"
+    },
+    "password": {
+      "title": "Password",
+      "info": {
+        "title": "Info",
+        "content": "You can <strong>change your password</strong> here. But you need to identify yourself again before proceeding."
+      },
+      "textfield": {
+        "mail": {
+          "label": "Email",
+          "placeholder": "Enter your username"
+        },
+        "password": {
+          "label": "Password",
+          "placeholder": "Please enter your password",
+          "helperText": "Incorrect entry."
+        }
+      }
+    }
+  },
+  "dialogPassword": {
+    "alert": {
+      "success": {
+        "title": "Password updated!",
+        "message": "Password has been updated successfully"
+      },
+      "error": {
+        "title": "Error",
+        "message": "Error updating password. Please try again."
+      }
+    },
+    "title": "Change Password",
+    "content": "To change your password, please enter your new password and confirm it below.",
+    "textfield": {
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password"
+      },
+      "passwordConfirm": {
+        "label": "Confirm password",
+        "placeholder": "Confirm your password"
+      }
+    }
+  }
+}

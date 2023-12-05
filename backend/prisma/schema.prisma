@@ -1,0 +1,190 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DB_PRISMA_URL")
+}
+
+model agency {
+  id      Int    @id @default(autoincrement())
+  name    String @db.VarChar(255)
+  city    String @db.VarChar(255)
+  country String @db.VarChar(255)
+  user    user[]
+}
+
+model attachment {
+  id          Int    @id @default(autoincrement())
+  idea_id     Int
+  content_url String @db.VarChar(255)
+  idea        idea   @relation(fields: [idea_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "attachment_ibfk_1")
+
+  @@index([idea_id], map: "idea_id")
+}
+
+model category {
+  id            Int             @id @default(autoincrement())
+  label         String          @db.VarChar(255)
+  color         String          @db.VarChar(255)
+  idea_category idea_category[]
+}
+
+model comment {
+  id           Int            @id @default(autoincrement())
+  idea_id      Int
+  user_id      Int
+  body         String         @db.Text
+  created_at   DateTime       @default(now()) @db.Timestamp(0)
+  idea         idea           @relation(fields: [idea_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "comment_ibfk_1")
+  user         user           @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "comment_ibfk_2")
+  comment_like comment_like[]
+
+  @@index([idea_id], map: "idea_id")
+  @@index([user_id], map: "user_id")
+}
+
+model comment_like {
+  id         Int     @id @default(autoincrement())
+  comment_id Int
+  user_id    Int
+  comment    comment @relation(fields: [comment_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "comment_like_ibfk_1")
+  user       user    @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "comment_like_ibfk_2")
+
+  @@index([comment_id], map: "comment_id")
+  @@index([user_id], map: "user_id")
+}
+
+model favorit {
+  id      Int  @id @default(autoincrement())
+  user_id Int
+  idea_id Int
+  user    user @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "favorit_ibfk_1")
+  idea    idea @relation(fields: [idea_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "favorit_ibfk_2")
+
+  @@index([idea_id], map: "idea_id")
+  @@index([user_id], map: "user_id")
+}
+
+model idea {
+  id                Int                 @id @default(autoincrement())
+  title             String              @db.VarChar(255)
+  context           String              @db.Text
+  user_id           Int
+  created_at        DateTime            @default(now()) @db.Timestamp(0)
+  archived_at       DateTime?           @db.DateTime(0)
+  deleted_at        DateTime?           @db.DateTime(0)
+  goal              String?             @db.Text
+  profits           String?             @db.Text
+  risks             String?             @db.Text
+  cloudshare        String?             @db.VarChar(255)
+  primary_img       String?             @db.VarChar(255)
+  views             Int                 @default(0)
+  attachment        attachment[]
+  comment           comment[]
+  favorit           favorit[]
+  user              user                @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "idea_ibfk_1")
+  idea_category     idea_category[]
+  idea_like         idea_like[]
+  idea_teams        idea_teams[]
+  notification_idea notification_idea[]
+
+  @@index([user_id], map: "user_id")
+}
+
+model idea_category {
+  id          Int      @id @default(autoincrement())
+  idea_id     Int
+  category_id Int
+  idea        idea     @relation(fields: [idea_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "idea_category_ibfk_1")
+  category    category @relation(fields: [category_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "idea_category_ibfk_2")
+
+  @@index([category_id], map: "category_id")
+  @@index([idea_id], map: "idea_id")
+}
+
+model idea_like {
+  id       Int      @id @default(autoincrement())
+  user_id  Int
+  idea_id  Int?
+  liked_at DateTime @default(now()) @db.Timestamp(0)
+  user     user     @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "idea_like_ibfk_1")
+  idea     idea?    @relation(fields: [idea_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "idea_like_ibfk_2")
+
+  @@index([idea_id], map: "idea_id")
+  @@index([user_id], map: "user_id")
+}
+
+model idea_teams {
+  id      Int  @id @default(autoincrement())
+  idea_id Int
+  user_id Int
+  idea    idea @relation(fields: [idea_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "idea_teams_ibfk_1")
+  user    user @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "idea_teams_ibfk_2")
+
+  @@index([idea_id], map: "idea_id")
+  @@index([user_id], map: "user_id")
+}
+
+model notification_idea {
+  id         Int       @id @default(autoincrement())
+  idea_id    Int
+  user_id    Int
+  type       String    @db.VarChar(255)
+  created_at DateTime  @default(now()) @db.Timestamp(0)
+  red_at     DateTime? @db.DateTime(0)
+  idea       idea      @relation(fields: [idea_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "notification_idea_ibfk_1")
+  user       user      @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "notification_idea_ibfk_2")
+
+  @@index([idea_id], map: "idea_id")
+  @@index([user_id], map: "user_id")
+}
+
+model position {
+  id   Int    @id @default(autoincrement())
+  name String @db.VarChar(255)
+  user user[]
+}
+
+model role {
+  id   Int    @id
+  name String @db.VarChar(255)
+  user user[]
+}
+
+model user {
+  id                Int                 @id @default(autoincrement())
+  mail              String              @unique(map: "mail") @db.VarChar(255)
+  hashed_password   String              @db.VarChar(255)
+  role_id           Int
+  avatar_url        String?             @db.VarChar(255)
+  banner_url        String?             @db.VarChar(255)
+  firstname         String              @db.VarChar(255)
+  lastname          String              @db.VarChar(255)
+  link              String?             @db.VarChar(255)
+  birthdate         DateTime?           @db.DateTime(0)
+  share_birthdate   Boolean?            @default(false)
+  phone             String?             @db.VarChar(255)
+  share_phone       Boolean?            @default(false)
+  biography         String?             @db.VarChar(255)
+  agency_id         Int
+  joined_at         DateTime            @db.DateTime(0)
+  position_id       Int
+  created_at        DateTime?           @default(now()) @db.Timestamp(0)
+  is_active         Boolean?            @default(false)
+  comment           comment[]
+  comment_like      comment_like[]
+  favorit           favorit[]
+  idea              idea[]
+  idea_like         idea_like[]
+  idea_teams        idea_teams[]
+  notification_idea notification_idea[]
+  role              role                @relation(fields: [role_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_ibfk_1")
+  agency            agency              @relation(fields: [agency_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_ibfk_2")
+  position          position            @relation(fields: [position_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "user_ibfk_3")
+
+  @@index([agency_id], map: "agency_id")
+  @@index([position_id], map: "position_id")
+  @@index([role_id], map: "role_id")
+}

@@ -1,0 +1,41 @@
+{
+  "title": "Login",
+  "subtitle": "Please enter your login details.",
+  "textfield": {
+    "mail": {
+      "label": "Email address",
+      "helpertext": "Please enter a valid email address."
+    },
+    "password": {
+      "label": "Password",
+      "helpertext": "Please enter a valid email address."
+    }
+  },
+  "forgetpassword": {
+    "button": {
+      "forgetpassword": "Forgot your password?"
+    },
+    "dialog": {
+      "title": "Forgot your password?",
+      "content": "Enter the email address associated with your account and we will send you a link to reset your password.",
+      "textfield": {
+        "password": {
+          "label": "Email address",
+          "helpertext": "Email address is invalid."
+        }
+      }
+    },
+    "alert": {
+      "success": {
+        "email": "Please check your email inbox in order to reset your password."
+      }
+    }
+  },
+  "alert": {
+    "error": {
+      "email": "Please fill out all the fields!",
+      "wrong": "Wrong email or password.",
+      "server": "Internal server error. Please try again later."
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "alert": "Idea archived!",
+  "dialogModify": {
+    "title": "Confirm modification",
+    "content": "Are you sure you want to modify this idea?"
+  },
+  "dialogArchive": {
+    "title": "Confirm archive",
+    "content": "Are you sure you want to archive this idea? This action is <strong>irreversible</strong> and will permanently remove the idea from the active list. <br /> <br /> Please note that archived ideas cannot be restored."
+  },
+  "headerIdea": {
+    "published": "Published on",
+    "dateFormats": {
+      "long": "DD MMM, YYYY"
+    },
+    "by": "By",
+    "team": "Team",
+    "context": "Context"
+  },
+  "commentBox": {
+    "dateFormats": {
+      "long": "DD MMM, YYYY HH:mm a"
+    }
+  },
+  "tabsIdea": {
+    "content": {
+      "general": "General",
+      "files": "Files",
+      "comments": "Comments"
+    },
+    "tabgeneral": {
+      "goal": "Goal",
+      "profits": "Profits",
+      "risks": "Risks",
+      "topcomments": "Top Comments"
+    },
+    "editComment": {
+      "alert": {
+        "error": "Message can't be modified",
+        "success": "Message modifed!"
+      },
+      "textfield": {
+        "placeholder": "Leave a few words"
+      }
+    },
+    "createComment": {
+      "alert": {
+        "success": "Message created!",
+        "error": "Message can't be created"
+      },
+      "textfield": {
+        "placeholder": "Leave a few words"
+      }
+    },
+    "tabfiles": {
+      "nofiles": "No files",
+      "type": "Type",
+      "file": "File",
+      "size": "Size",
+      "action": "Action"
+    },
+    "tabcomments": {
+      "title": "Comments",
+      "mostrecent": "Most recent",
+      "mostliked": "Most liked",
+      "nocomments": "No comments",
+      "seemore": "See more",
+      "seeless": "See less"
+    }
+  }
+}
