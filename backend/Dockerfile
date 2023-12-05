@@ -1,19 +1,28 @@
-# Dockerfile backend
-FROM node:16.14
+# Dockerfile for api
 
-WORKDIR /usr/src/app
-
-ARG DB_HOST=${DB_HOST}
-ENV DB_HOST=${DB_HOST}
-ARG DB_USER=${DB_USER}
-ENV DB_USER=${DB_USER}
-ARG DB_PASSWORD=${DB_PASSWORD}
-ENV DB_PASSWORD=${DB_PASSWORD}
-ARG DB_NAME=${DB_NAME}
-ENV DB_NAME=${DB_NAME}
-
-COPY ./backend .
-
+#######################
+# Install stage
+#######################
+FROM node:lts-alpine3.17 AS installer
+RUN apk add --no-cache libc6-compat openssl && apk update
+WORKDIR /app
+COPY . .
 RUN npm install
 
-CMD [ "npm", "start" ]
+#######################
+# Build stage
+#######################
+FROM installer AS builder
+RUN apk add --no-cache libc6-compat openssl && apk update
+WORKDIR /app
+RUN npm run build
+
+#######################
+# Run stage
+#######################
+FROM builder AS runner
+RUN apk add --no-cache libc6-compat openssl && apk update
+WORKDIR /app
+COPY --from=builder /app/dist /app/dist
+EXPOSE 8000
+CMD npm run start

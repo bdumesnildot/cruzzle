@@ -6,6 +6,8 @@ import * as path from "path";
 
 import routes from "./routes/index";
 
+const frontendUrl = process.env.FRONTEND_URL || "http://localhost:3000";
+
 // create express app
 const app: Application = express();
 
@@ -21,7 +23,7 @@ const options: cors.CorsOptions = {
   ],
   credentials: true,
   methods: "GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE",
-  origin: process.env.FRONTEND_URL,
+  origin: [frontendUrl, "https://cruzzle.mesnil.dev"],
   preflightContinue: false,
 };
 app.use(cors(options));
