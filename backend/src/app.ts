@@ -23,7 +23,12 @@ const options: cors.CorsOptions = {
   ],
   credentials: true,
   methods: "GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE",
-  origin: [frontendUrl, "https://cruzzle.mesnil.dev"],
+  origin: [
+    frontendUrl,
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://cruzzle.mesnil.dev",
+  ],
   preflightContinue: false,
 };
 app.use(cors(options));
