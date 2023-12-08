@@ -1,6 +1,6 @@
 import Axios from "../config/axios.config";
 
-const url = `http://${import.meta.env.VITE_BACKEND_URL}`;
+const url = import.meta.env.VITE_BACKEND_URL;
 
 const apiAdminUsers = async () => {
   const route = "/api/admin/users/";
