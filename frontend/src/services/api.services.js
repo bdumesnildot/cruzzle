@@ -1,7 +1,7 @@
 import qs from "qs";
 import Axios from "../config/axios.config";
 
-const url = import.meta.env.VITE_BACKEND_URL;
+const url = `http://${import.meta.env.VITE_BACKEND_URL}`;
 
 const serializer = (reqItems) => {
   const encodedParams = qs.stringify(reqItems, {

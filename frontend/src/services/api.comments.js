@@ -1,6 +1,6 @@
 import Axios from "../config/axios.config";
 
-const url = import.meta.env.VITE_BACKEND_URL;
+const url = `http://${import.meta.env.VITE_BACKEND_URL}`;
 const userRoute = "/api/comments/";
 
 const apiGetComments = async (route = "") => {
