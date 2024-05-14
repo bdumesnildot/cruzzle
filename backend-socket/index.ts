@@ -1,5 +1,5 @@
-import dotenv from "dotenv";
 import { createServer } from "http";
+import dotenv from "dotenv";
 import { Server } from "socket.io";
 import app from "./src/app";
 import database from "./src/config/database";

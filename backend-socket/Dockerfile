@@ -1,4 +1,4 @@
-# Dockerfile for api
+# Dockerfile for api-socket
 
 #######################
 # Install stage
@@ -24,8 +24,9 @@ FROM builder AS runner
 RUN apk add --no-cache libc6-compat openssl && apk update
 WORKDIR /app
 COPY --from=builder /app/dist /app/dist
-EXPOSE 8000
+EXPOSE 8010
 
+# Don't run production as root
 RUN addgroup --system --gid 1001 cruzzle && \
   adduser --system --uid 1001 cruzzle
 USER cruzzle
