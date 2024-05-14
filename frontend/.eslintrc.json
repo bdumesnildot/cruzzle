@@ -8,6 +8,15 @@
     "airbnb",
     "plugin:prettier/recommended"
   ],
+  "ignorePatterns": [
+    "out",
+    "dist",
+    "build",
+    "public",
+    "coverage",
+    "generated",
+    "node_modules"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true

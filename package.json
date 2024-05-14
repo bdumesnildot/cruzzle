@@ -1,28 +1,23 @@
 {
-  "name": "template-fullstack",
+  "name": "cruzzle",
   "version": "3.0.0",
-  "description": "project template for the React-Express-MySQL cursus in Wild Code School",
-  "homepage": "https://github.com/wildcodeschool/js-template-fullstack#readme",
-  "bugs": {
-    "url": "https://github.com/wildcodeschool/js-template-fullstack/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wildcodeschool/js-template-fullstack.git"
-  },
+  "description": "student project build on the top of React-Express-MySQL",
   "config": {
     "cli": "npm"
   },
   "scripts": {
-    "postinstall": "cross-env-shell \"husky install && cd ./frontend && $npm_package_config_cli install && cd ../backend && $npm_package_config_cli install && cd ../backend_socket && $npm_package_config_cli install\"",
+    "postinstall": "cross-env-shell \"husky install && cd ./frontend && $npm_package_config_cli install && cd ../backend && $npm_package_config_cli install && cd ../backend-socket && $npm_package_config_cli install\"",
     "migrate": "cross-env-shell \"cd ./backend && $npm_package_config_cli run migrate\"",
     "prisma-init": "cross-env-shell \"cd ./backend && $npm_package_config_cli run prisma-init\"",
     "dev": "cross-env-shell 'concurrently -c green,yellow,blue -t \"HH:mm:ss\" -p \"{name}\" \"$npm_package_config_cli:dev-*\"'",
     "dev-front": "cross-env-shell \"cd ./frontend && $npm_package_config_cli run dev\"",
     "dev-back": "cross-env-shell \"cd ./backend && $npm_package_config_cli run dev\"",
-    "dev-back-socket": "cross-env-shell \"cd ./backend_socket && $npm_package_config_cli run dev\"",
-    "lint": "cross-env-shell \"cd ./frontend && $npm_package_config_cli run lint && cd ../backend && $npm_package_config_cli run lint\"",
-    "fix": "cross-env-shell \"cd ./frontend && $npm_package_config_cli run fix && cd ../backend && $npm_package_config_cli run fix\""
+    "dev-back-socket": "cross-env-shell \"cd ./backend-socket && $npm_package_config_cli run dev\"",
+    "build": "cross-env-shell \"cd ./frontend && $npm_package_config_cli run build && cd ../backend && $npm_package_config_cli run build && cd ../backend-socket && $npm_package_config_cli run build\"",
+    "start": "cross-env-shell \"cd ./frontend && $npm_package_config_cli run start && cd ../backend && $npm_package_config_cli run start && cd ../backend-socket && $npm_package_config_cli run start\"",
+    "lint": "cross-env-shell \"cd ./frontend && $npm_package_config_cli run lint && cd ../backend && $npm_package_config_cli run lint && cd ../backend-socket && $npm_package_config_cli run lint\"",
+    "check:prettier": "cross-env-shell \"cd ./frontend && $npm_package_config_cli run check:prettier && cd ../backend && $npm_package_config_cli run check:prettier && cd ../backend-socket && $npm_package_config_cli run check:prettier\"",
+    "fix": "cross-env-shell \"cd ./frontend && $npm_package_config_cli run fix && cd ../backend && $npm_package_config_cli run fix && cd ../backend-socket && $npm_package_config_cli run fix\""
   },
   "keywords": [],
   "author": "Wild Code School",

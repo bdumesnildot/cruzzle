@@ -2,7 +2,10 @@
   "scripts": {
     "build": "tsc",
     "dev": "nodemon --watch . --exec ts-node index.ts",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "lint": "eslint --ext .ts ",
+    "check:prettier": "prettier --debug-check .",
+    "fix": "prettier --write . && eslint --fix --ext .ts ."
   },
   "dependencies": {
     "cors": "^2.8.5",

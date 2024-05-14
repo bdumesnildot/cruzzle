@@ -11,6 +11,16 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
   ],
+  ignorePatterns: [
+    ".eslintrc.js",
+    "out",
+    "dist",
+    "build",
+    "public",
+    "coverage",
+    "generated",
+    "node_modules"
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
@@ -18,7 +28,6 @@ module.exports = {
     project: "./tsconfig.json",
     tsconfigRootDir: __dirname,
   },
-  ignorePatterns: [".eslintrc.js"],
   rules: {
     "no-console": "off",
     "no-restricted-syntax": [

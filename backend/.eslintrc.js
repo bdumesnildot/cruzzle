@@ -18,6 +18,16 @@ module.exports = {
     project: "./tsconfig.json",
     tsconfigRootDir: __dirname,
   },
+  ignorePatterns: [
+    ".eslintrc.js",
+    "out",
+    "dist",
+    "build",
+    "public",
+    "coverage",
+    "generated",
+    "node_modules"
+  ],
   ignorePatterns: [".eslintrc.js"],
   rules: {
     "no-console": "off",
