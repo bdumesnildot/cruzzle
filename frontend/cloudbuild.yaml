@@ -9,6 +9,8 @@ steps:
   - 'VITE_BACKEND_URL=${_BACKEND_URL}'
   - '--build-arg'
   - 'VITE_SOCKET_URL=${_SOCKET_URL}'
+  - '-f'
+  - 'frontend/Dockerfile'
   - '.'
 
 # Push the container image to Container Registry
