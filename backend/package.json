@@ -3,7 +3,7 @@
     "build": "tsc",
     "dev": "nodemon --watch . --exec ts-node index.ts",
     "migrate": "ts-node migrate.ts && prisma db pull --force && prisma generate",
-    "prisma-init": "prisma db pull && prisma generate",
+    "prisma:init": "prisma db pull && prisma generate",
     "start": "node dist/index.js",
     "lint": "eslint --ext .ts ",
     "check:prettier": "prettier --debug-check .",

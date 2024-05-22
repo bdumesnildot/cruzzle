@@ -1,6 +1,8 @@
 import express, { Application } from "express";
 import cors from "cors";
 
+const frontendUrl = process.env.FRONTEND_URL || "http://localhost:3000";
+
 const app: Application = express();
 
 const options: cors.CorsOptions = {
@@ -15,8 +17,7 @@ const options: cors.CorsOptions = {
   ],
   credentials: true,
   methods: "GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE",
-  origin:
-    process.env.NODE_ENV === "development" ? true : process.env.FRONTEND_URL,
+  origin: [frontendUrl, "http://localhost:3000", "http://localhost:3001"],
   preflightContinue: false,
 };
 app.use(cors(options));
