@@ -25,6 +25,6 @@ RUN npm run build
 # Server stage
 #######################
 FROM nginx:stable-alpine3.17 AS server
-EXPOSE 8080
+EXPOSE 80
 COPY ./default.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/dist /usr/share/nginx/html
