@@ -10,7 +10,7 @@ import {
 import UserIdDict from "./src/interfaces/users";
 
 dotenv.config();
-const port: number = parseInt(process.env.SOCKET_PORT ?? "6002", 10);
+const port: number = parseInt(process.env.SOCKET_PORT ?? "8010", 10);
 
 const httpServer = createServer(app);
 const io = new Server(httpServer, {

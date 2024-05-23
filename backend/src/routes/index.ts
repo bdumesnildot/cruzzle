@@ -15,7 +15,7 @@ import notificationsRoutes from "./notifications.routes";
 const app: Application = express();
 
 const welcome = (req: Request, res: Response) => {
-  res.send("Welcome to cruzzle API");
+  res.status(200).json({ message: "Hello 🧩" });
 };
 app.get("/", welcome);
 

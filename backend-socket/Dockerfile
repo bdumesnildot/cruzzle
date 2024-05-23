@@ -26,8 +26,8 @@ RUN apk add --no-cache libc6-compat openssl && apk update
 WORKDIR /app
 COPY --from=builder /app/dist /app/dist
 
-ENV API_PORT 8010
-EXPOSE ${API_PORT}
+ENV SOCKET_PORT 8010
+EXPOSE ${SOCKET_PORT}
 
 RUN addgroup --system --gid 1001 cruzzle && \
   adduser --system --uid 1001 cruzzle
