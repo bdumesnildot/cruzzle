@@ -7,7 +7,7 @@ steps:
   - '${_SERVICE_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE_NAME}'
   - '-f'
   - 'backend/Dockerfile'
-  - '.'
+  - './backend'
 
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'

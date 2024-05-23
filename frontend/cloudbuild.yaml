@@ -11,7 +11,7 @@ steps:
   - 'VITE_SOCKET_URL=${_SOCKET_URL}'
   - '-f'
   - 'frontend/Dockerfile'
-  - '.'
+  - './frontend'
 
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
