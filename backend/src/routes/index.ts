@@ -5,7 +5,7 @@ import favoritsRoutes from "./favorits.routes";
 import categoriesRoutes from "./categories.routes";
 import adminRoutes from "./admin.routes";
 import commentsRoutes from "./comments.routes";
-import commmentLikesRoutes from "./comments_likes.routes";
+import commentLikesRoutes from "./comments_likes.routes";
 import ideaLikesRoutes from "./idea_likes.routes";
 import agenciesRoutes from "./agencies.routes";
 import positionsRoutes from "./positions.routes";
@@ -18,13 +18,14 @@ const welcome = (req: Request, res: Response) => {
   res.status(200).json({ message: "Hello 🧩" });
 };
 app.get("/", welcome);
+app.get("/api", welcome);
 
 app.use("/api/users", usersRoutes);
 app.use("/api/ideas", ideasRoutes);
 app.use("/api/favorits", favoritsRoutes);
 app.use("/api/categories", categoriesRoutes);
 app.use("/api/comments", commentsRoutes);
-app.use("/api/likes", commmentLikesRoutes);
+app.use("/api/likes", commentLikesRoutes);
 app.use("/api/ideas/likes", ideaLikesRoutes);
 app.use("/api/agencies", agenciesRoutes);
 app.use("/api/positions", positionsRoutes);
