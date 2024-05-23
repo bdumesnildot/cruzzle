@@ -58,7 +58,9 @@ function LoginForm() {
       setOpen(true);
     } else {
       try {
-        const { token } = await apiUsersLogin(mail, password);
+        const { token } = await apiUsersLogin(mail, password).catch((error) => {
+          throw error;
+        });
         localStorage.setItem("token", token);
         navigate("/dashboard");
       } catch (error) {

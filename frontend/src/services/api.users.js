@@ -101,7 +101,6 @@ const apiUsersLogin = async (mail, password) => {
       console.error("Fetch  error:", error);
     }
     throw error;
-    // TODO
   }
 };
 
