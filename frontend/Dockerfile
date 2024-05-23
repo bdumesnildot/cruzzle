@@ -3,8 +3,7 @@
 #######################
 # Install stage
 #######################
-FROM node:lts-alpine3.18 AS installer
-# RUN apk add --no-cache libc6-compat openssl && apk update
+FROM node:20-alpine AS installer
 WORKDIR /app
 COPY . .
 RUN npm install
@@ -13,7 +12,6 @@ RUN npm install
 # Build stage
 #######################
 FROM installer AS build
-# RUN apk add --no-cache libc6-compat openssl && apk update
 WORKDIR /app
 
 ARG BACKEND_URL

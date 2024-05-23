@@ -23,7 +23,7 @@ const options: cors.CorsOptions = {
   ],
   credentials: true,
   methods: "GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE",
-  origin: [frontendUrl, "http://localhost:3000", "http://localhost:3001"],
+  origin: [frontendUrl, "http://localhost:3000", "http://localhost:8080"],
   preflightContinue: false,
 };
 app.use(cors(options));
